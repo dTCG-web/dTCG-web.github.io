@@ -2,9 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My GitHub Page</title>
+    <title>The Website of DRAGTCG</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Welcome to my website!</h1>
+    <div>
+        <div>
+            Filtros
+        </div>
+        <select name="filtro" id="filtro" onchange="">
+            <option value="todos">Todos</option>
+        </select>
+    </div>
+
+
+
+    <div>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseReinas" role="button" aria-expanded="false" aria-controls="collapseReinas">
+            Reinas
+        </a>
+        <div class="collapse" id="collapseReinas">
+        <ul id="lista-reinas">
+
+        </ul>
+        </div>
+    </div>
+
+
+    
+    <div>
+        
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseGatadas" role="button" aria-expanded="false" aria-controls="collapseGatadas">Gatadas</a>
+        
+        <div class="collapse" id="collapseGatadas">
+        <ul id="lista-gatadas">
+
+        </ul>
+        </div>
+    </div>
+
+    
+    <div>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseEscenas" role="button" aria-expanded="false" aria-controls="collapseEscenas">Escenas</a>
+        <div class="collapse" id="collapseEscenas">
+        <ul id="lista-escenas">
+
+        </ul>
+        </div>
+    </div>  
+
+
+    <script src="script.js"></script>
+    <script src="filter.js"></script>
+    <script src="event_filter.js"></script>
 </body>
 </html>
